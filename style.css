@@ -5,6 +5,35 @@ body{
     font-family: 'Poppins', sans-serif;
     background-color: #F3F1FF;
 }
+/* -------------------nav------------------- */
+    nav{
+        background: #562EFF;
+        width: 100%;
+        height: 94px;
+        line-height: 100px;
+        
+    }
+    nav li{
+        list-style: none;
+        margin-right: 35px;
+        
+        
+    }
+    nav li a{
+        text-decoration: none;
+        font-size: 16px;
+        color: #F3F1FF;
+    }
+    nav ul{
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 550px;
+    }
+    nav ul li img{
+        width: 51px;
+        height: 51px;
+        line-height: 100px;
+    }
 main{
     display: flex;
     flex-direction: column ;
@@ -122,4 +151,25 @@ hr{
     background: #FFE4E8;
     border-radius: 15px;
     color: #FF4A60;
+}
+
+/* -----------------media queries--------------- */
+
+/* ------------------mobile devices--------------*/
+
+@media  only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(1, 1fr);  
+    }
+    .player, .blog{
+        flex-direction: column;
+    }
+
+    .courses, .blogs{
+        justify-items: center;
+        grid-row-gap: 20px;
+    }
 }
